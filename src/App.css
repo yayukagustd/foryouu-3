@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background: url('/public/bg5.jpg') no-repeat center center fixed; */
+  background-size: cover;
+  font-family: 'Pacifico', cursive;
+  overflow: hidden;
+}
+
+.container {
+  text-align: center;
+}
+
+.love-text {
+  font-size: 5em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  animation: colorChange 5s infinite, fadeIn 2s ease-in-out infinite;
+}
+
+@keyframes fadeIn {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+@keyframes colorChange {
+  0% { color: #ff6b6b; }
+  20% { color: #f06595; }
+  40% { color: #cc5de8; }
+  60% { color: #845ef7; }
+  80% { color: #5c7cfa; }
+  100% { color: #339af0; }
+}
+
+.blink {
+  animation: blinkEffect 1s step-start infinite;
+}
+
+@keyframes blinkEffect {
+  50% { opacity: 0; }
+}
+
+.image-above-text {
+  width: 200px; /* Adjust the width as needed */
+  margin-bottom: 20px;
+}
