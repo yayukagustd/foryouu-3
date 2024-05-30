@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
-import imagePath from './aku3.jpg'; // Import your image file
+
 
 
 function App() {
